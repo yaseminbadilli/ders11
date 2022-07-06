@@ -22,9 +22,8 @@ export default class App extends React.Component {
                     <Row><Menu></Menu></Row>
 
                     <Row>
-                        <Col xs="2"><Categories></Categories></Col>
-                        <Col xs="10"><Product boxColor="white"/></Col>
-
+                        <Categories/>
+                       
                     </Row>
                     <Row><Footer/></Row>
 

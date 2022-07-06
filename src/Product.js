@@ -15,15 +15,15 @@ export default function Product(props) {
                    <Canvas>
                     <OrbitControls/>
                     <mesh position={[2, 2, 3]}>
-                        <boxGeometry attach="geometry" args={[1, 1, 1]} />
-                        <meshBasicMaterial attach="material" color="hotpink" />
+                        <boxGeometry attach="geometry" args={props.args} />
+                        <meshBasicMaterial attach="material" color={props.boxColor} />
                     </mesh>
                     <mesh position={[0, 0, 0]}>
-                        <boxGeometry attach="geometry" args={[1, 1, 1]}/>
-                        <meshBasicMaterial attach="material" color="blue" />
+                        <boxGeometry attach="geometry" args={props.args}/>
+                        <meshBasicMaterial attach="material" color={props.boxColor} />
                     </mesh>
                     <mesh position={[-2, -2, -3]}>
-                        <boxGeometry attach="geometry" args={[1, 1, 1]}/>
+                        <boxGeometry attach="geometry" args={props.args}/>
                         <meshBasicMaterial attach="material" color={props.boxColor} />
                     </mesh>
                     
